@@ -1,0 +1,2 @@
+#Software #IoT #industria 
+Es una especialización o subconjunto del IoT, donde hace referencia al sector de la industria. Aquí se toma en cuenta los proceso en cada etapa de ciclo de vida de un producto, incluyendo al forma en que es diseñado, elaborado, entregado, vendido y recibe mantenimiento.

@@ -1,0 +1,8 @@
+El proyecto de Sistema Autónomo de Gestión Hídrica para Horticultura Doméstica con Monitoreo Remoto cuenta con los siguientes programas:
+- boot.py: Como su nombre lo indica, este va en el 'boot.py' del esp32, y realiza únicamente la conexión a internet.
+- 'Mains' -> Es lo que se debe de colocar detro de la sección 'main.py', y tiene la lógica del programa (envío y recibimiento de mensajes MQTT, funcionalidad BLE y el inicio de la interacción con sensores y actuadores):
+	- mainMQTT.py: Esta es la versión más estable del proyecto, pues no cuenta con la interacción MQTT + BLE, por lo cuál es un programa que no forzará al microcontrolador (sin riesgo de daño al esp32). Adicionalmente es la que tiene menos funcionalidades.
+	- mainFinal.py: Esta es la última versión probada en el esp32. Cuenta con funcionalidad MQTT, BLE y la lectura de dos sensores (de nivel de agua) y un actuador (led RGB). Sin embargo cuenta con problemas en la colorimetría del led.
+	-mainNoTest.py: Esta versión tiene la misma funcionalidad que 'mainFinal.py', pero soluciona el problema de la colorimetría del led RGB, sin embargo el microcontrolador falló antes de que se pudiera probar. Por lo que se desconoce si cuenta con otros problemas o si resuelve el problema.
+
+PD. La codificación del dashboard al ser a nivel nodo, no puede ser adjuntada, pero se explicará en el video. En caso de que se quiera el código de cada nodo, se puede solicitar.
